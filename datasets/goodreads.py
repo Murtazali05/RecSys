@@ -30,19 +30,5 @@ def _get_dataset():
 
 
 def get_goodbooks_dataset():
-    """
-    Download and return the goodbooks-10K dataset [2]_.
-
-    Returns
-    -------
-
-    Interactions: :class:`spotlight.interactions.Interactions`
-        instance of the interactions class
-
-    References
-    ----------
-
-    .. [2] https://github.com/zygmuntz/goodbooks-10k
-    """
 
     return Interactions(*_get_dataset())

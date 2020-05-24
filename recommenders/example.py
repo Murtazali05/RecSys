@@ -1,5 +1,7 @@
 import numpy as np
+from sklearn import decomposition as d
 
+d._truncated_svd()
 matrix = [[1, 2, 3],
           [5, 4, 1]]
 
@@ -24,3 +26,6 @@ print(arr)
 tmp = [1]
 
 tmp.append()
+
+
+

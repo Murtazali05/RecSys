@@ -1,4 +1,7 @@
-class MatrixFactorization:
+from recommenders.abstract_recommender import AbstractRecommender
+
+
+class MatrixFactorization(AbstractRecommender):
     def __init__(self):
         pass
 

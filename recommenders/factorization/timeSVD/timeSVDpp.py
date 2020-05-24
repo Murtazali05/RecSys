@@ -3,7 +3,7 @@ import math
 
 import numpy as np
 
-from recommenders.timeSVD import loadMovieData
+from recommenders.factorization.timeSVD import loadMovieData
 
 
 class timeSVDpp:
@@ -262,7 +262,7 @@ class timeSVDpp:
 
     # evaluating the model using RMSE
     def RMSE(self):
-        with open("../../datasets/data/ml-100k/u1.test", 'rb') as f:
+        with open("../../../datasets/data/ml-100k/u1.test", 'rb') as f:
             data = csv.reader(f, delimiter='\t')
 
             mean_squared_error = 0

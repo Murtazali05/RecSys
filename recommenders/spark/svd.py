@@ -17,9 +17,7 @@ ratesAndPreds = ratings.map(lambda r: ((r[0], r[1]), r[2])).join(predictions)
 MSE = ratesAndPreds.map(lambda r: (r[1][0] - r[1][1])**2).mean()
 print("Mean Squared Error = " + str(MSE))
 
-# Save and load model
 model.save(sc, "target/tmp/myCollaborativeFilter")
 sameModel = MatrixFactorizationModel.load(sc, "target/tmp/myCollaborativeFilter")
 
-# Build the recommendation model using Alternating Least Squares based on implicit ratings
 model = ALS.trainImplicit(ratings, rank, numIterations, alpha=0.01)
