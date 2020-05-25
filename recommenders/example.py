@@ -6,7 +6,7 @@ matrix = [[1, 2, 3],
           [5, 4, 1]]
 
 if matrix != 2:
-    print('Хуй')
+    print('Matrix')
 
 for i in enumerate(matrix):
     print(i)
